@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mrs Game Family - منوی کافه</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Vazirmatn:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin:0; padding:0; }
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: url(img/photo_6008270583084733384_y.jpg) repeat;
+    color: #1B3A2F;
+    line-height: 1.5;
+}
+header {
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+}
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #365727;
+    margin-bottom: 10px;
+}
+header p { font-size: 1.1em; color: #6B6B6B; }
+
+.accordion { max-width: 900px; margin: 0 auto 60px auto; padding: 0 20px; }
+.accordion-item { background: rgba(255,255,255,0.95); border-radius: 12px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+.accordion-header {
+    padding: 18px 24px;
+    cursor: pointer;
+    background: hsl(98, 41%, 18%); /* سبز تیره */
+    color: #F5F5DC; /* قهوه ای کرمی */
+    font-weight: 700;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between; /* متن و علامت جدا می‌شوند */
+    align-items: center;
+    border-radius: 12px;
+    transition: background .2s;
+}
+.accordion-header:hover { background: #3e4518; }
+
+.accordion-header span.sign {
+    font-size: 1.5em;
+    transition: transform .2s;
+}
+
+.accordion-header.active span.sign {
+    transform: rotate(180deg);
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+    padding: 0 24px;
+}
+.accordion-body .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    transition: all 0.2s ease;
+    position: relative;
+}
+.accordion-body .item:last-child { border-bottom: none; }
+.accordion-body .item-name { font-weight: 500; font-size: 1em; }
+.accordion-body .item-price { font-weight: 600; color: #D6A77A; font-size: 1em; }
+
+/* Coffee bean image next to item */
+.accordion-body .item::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url() center center;
+    background-size: contain;
+    margin-right: 12px;
+}
+
+/* Hover effect */
+.accordion-body .item:hover {
+    background: rgba(214, 167, 122, 0.2);
+    transform: scale(1.02);
+    border-radius: 8px;
+}
+
+/* Item images */
+.accordion-body .item img {;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: 12px;
+}
+
+/* Responsive */
+@media (max-width: 600px){
+    header h1 { font-size: 2em; }
+    .accordion-header { font-size: 1em; padding: 14px 16px; }
+    .accordion-body { padding: 0 16px; }
+    .accordion-body .item img { width: 40px; height: 40px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Mrs Game Family</h1>
+ 
+</header>
+
+<div class="accordion">
+
+<!-- نوشیدنی گرم و سرد بر پایه قهوه -->
+<div class="accordion-item">
+  <div class="accordion-header">نوشیدنی گرم و سرد بر پایه قهوه <span class="sign">+</span></div>
+  <div class="accordion-body">
+    <div class="item"><span class="item-name">اسپرسو</span><span class="item-price">60,000 تومان</span></div>
+    <div class="item"><span class="item-name">دبل اسپرسو</span><span class="item-price">70,000 تومان</span></div>
+    <div class="item"><span class="item-name">امریکانو</span><span class="item-price">100,000 تومان</span></div>
+    <div class="item"><span class="item-name">ماسالا</span><span class="item-price">120,000 تومان</span></div>
+    <div class="item"><span class="item-name">لاته</span><span class="item-price">140,000 تومان</span></div>
+    <div class="item"><span class="item-name">کارامل ماکیاتو</span><span class="item-price">150,000 تومان</span></div>
+
+<div class="item"><span class="item-name">آفوگاتو</span><span class="item-price">150,000 تومان</span></div>
+<div class="item"><span class="item-name">موکا</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">کاپوچینو</span><span class="item-price">130,000 تومان</span></div>
+    <div class="item"><span class="item-name">هات چاکلت</span><span class="item-price">120,000 تومان</span></div>
+    <div class="item"><span class="item-name">وایت چاکلت</span><span class="item-price">130,000 تومان</span></div>
+    <div class="item"><span class="item-name">شیر نسکافه</span><span class="item-price">120,000 تومان</span></div>
+    <div class="item"><span class="item-name">شیر کاکائو</span><span class="item-price">80,000 تومان</span></div>
+    <div class="item"><span class="item-name">آیس لته</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">آیس آمریکانو</span><span class="item-price">110,000 تومان</span></div>
+    <div class="item"><span class="item-name">آیس کارامل ماکیاتو</span><span class="item-price">160,000 تومان</span></div>
+    <div class="item"><span class="item-name">آیس موکا</span><span class="item-price">160,000 تومان</span></div>
+  </div>
+</div>
+
+<!-- نوشیدنی سرد -->
+<div class="accordion-item">
+  <div class="accordion-header">نوشیدنی سرد <span class="sign">+</span></div>
+  <div class="accordion-body">
+    <div class="item"><span class="item-name">موهیتو</span><span class="item-price">140,000 تومان</span></div>
+     <div class="item"><span class="item-name">پینک موهیتو</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">لیموناد</span><span class="item-price">140,000 تومان</span></div>
+    <div class="item"><span class="item-name">آب طالبی</span><span class="item-price">120,000 تومان</span></div>
+    <div class="item"><span class="item-name">شیر موز</span><span class="item-price">120,000 تومان</span></div>
+  </div> 
+</div>
+
+<!-- شیک‌ها -->
+<div class="accordion-item">
+  <div class="accordion-header">شیک‌ها <span class="sign">+</span></div>
+  <div class="accordion-body">
+    <div class="item"><span class="item-name">شکلات</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">موز شکلات</span><span class="item-price">160,000 تومان</span></div>
+     <div class="item"><span class="item-name"> توت فرنگی</span><span class="item-price">150,000 تومان</span></div>
+     <div class="item"><span class="item-name"> انبه </span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">نوتلا</span><span class="item-price">180,000 تومان</span></div>
+    <div class="item"><span class="item-name">وانیل</span><span class="item-price">150,000 تومان</span></div>
+     <div class="item"><span class="item-name">پاستیل</span><span class="item-price">180,000 تومان</span></div>
+     <div class="item"><span class="item-name">بادام زمینی</span><span class="item-price">170,000 تومان</span></div>
+  </div>
+</div>
+
+<!-- چای و دمنوش -->
+<div class="accordion-item">
+  <div class="accordion-header">چای و دمنوش <span class="sign">+</span></div>
+  <div class="accordion-body">
+    <div class="item"><span class="item-name">دمنوش ویژه</span><span class="item-price">140,000 تومان</span></div>
+    <div class="item"><span class="item-name">دمنوش آرامش</span><span class="item-price">100,000 تومان</span></div>
+    <div class="item"><span class="item-name">چای زعفران</span><span class="item-price">100,000 تومان</span></div>
+    <div class="item"><span class="item-name">چای سبز</span><span class="item-price">100,000 تومان</span></div>
+    <div class="item"><span class="item-name">چای ترش</span><span class="item-price">100,000 تومان</span></div>
+    <div class="item"><span class="item-name">چای ساده</span><span class="item-price">40,000 تومان</span></div>
+    <div class="item"><span class="item-name">گل گاو زبان</span><span class="item-price">100,000 تومان</span></div>
+    <div class="item"><span class="item-name">به لیمو</span><span class="item-price">100,000 تومان</span></div>
+    <div class="item"><span class="item-name">بهار نارنج</span><span class="item-price">100,000 تومان</span></div>
+    <div class="item"><span class="item-name">هل و دارچین</span><span class="item-price">100,000 تومان</span></div>
+  </div>
+</div>
+
+<!-- صبحانه و میان وعده -->
+<div class="accordion-item">
+  <div class="accordion-header">صبحانه و میان وعده <span class="sign">+</span></div>
+
+
+<div class="accordion-body">
+   <div class="item"><span class="item-name">اسنک</span><span class="item-price">100,000 تومان</span></div>
+    <div class="item"><span class="item-name">بشقاب ایرانی</span><span class="item-price">160,000 تومان</span></div>
+    <div class="item"><span class="item-name">نیمرو تک نفره</span><span class="item-price">100,000 تومان</span></div>
+    <div class="item"><span class="item-name">نیمرو دو نفره</span><span class="item-price">160,000 تومان</span></div>
+    <div class="item"><span class="item-name">املت تک نفره</span><span class="item-price">130,000 تومان</span></div>
+    <div class="item"><span class="item-name">املت دو نفره</span><span class="item-price">200,000 تومان</span></div>
+    <div class="item"><span class="item-name">سوسیس تخم مرغ تک نفره</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">سوسیس تخم مرغ دو نفره</span><span class="item-price">220,000 تومان</span></div>
+    <div class="item"><span class="item-name">سیب ساده</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">سیب ویژه</span><span class="item-price">250,000 تومان</span></div>
+    <div class="item"><span class="item-name">سیب آلفردو</span><span class="item-price">220,000 تومان</span></div>
+    <div class="item"><span class="item-name">سیب چدار</span><span class="item-price">220,000 تومان</span></div>
+    <div class="item"><span class="item-name">پاستا آلفردو</span><span class="item-price">300,000 تومان</span></div>
+    <div class="item"><span class="item-name">بشقاب ورزشی</span><span class="item-price">250,000 تومان</span></div>
+    <div class="item"><span class="item-name">سیب تنوری</span><span class="item-price">100,000 تومان</span></div>
+  </div>
+</div>
+
+<!-- کیک و دسر -->
+<div class="accordion-item">
+  <div class="accordion-header">کیک و دسر <span class="sign">+</span></div>
+  <div class="accordion-body">
+    <div class="item"><span class="item-name">کیک روز</span><span class="item-price">80,000 تومان</span></div>
+    <div class="item"><span class="item-name">چیز کیک</span><span class="item-price">---</span></div>
+  </div>
+</div>
+
+<!-- قلیان -->
+<div class="accordion-item">
+  <div class="accordion-header">قلیان <span class="sign">+</span></div>
+  <div class="accordion-body">
+    <div class="item"><span class="item-name">لیمو نعناع</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">دوسیب</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">دو سیب شلیل</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">هندونه یخ</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">شبهای مسکو</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">آدامس دارچین</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">لاو</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">گاد فادر</span><span class="item-price">150,000 تومان</span></div>
+    <div class="item"><span class="item-name">توت فرنگی یخ</span><span class="item-price">150,000 تومان</span></div>
+  </div>
+</div>
+
+</div>
+
+<script>
+const headers = document.querySelectorAll('.accordion-header');
+headers.forEach(header => {
+  header.addEventListener('click', () => {
+    const active = header.classList.contains('active');
+    headers.forEach(h => h.classList.remove('active'));
+    document.querySelectorAll('.accordion-body').forEach(body => body.style.maxHeight = null);
+    if(!active){
+      header.classList.add('active');
+      const body = header.nextElementSibling;
+      body.style.maxHeight = body.scrollHeight + "px";
+    }
+  });
+});
+</script>
+
+</body>
+</html>
